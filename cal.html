@@ -8,14 +8,17 @@
         }
         body{
             display: flex;
-            align-items: self-start;
-            margin-left: 400px;
-            margin-top:5px;
+            align-items: center;
             background-image: url("calc.png");
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f0f0f0;
             background-size:cover;
+            justify-content: center;
             
+        }
+        body background-image{
+            max-width: 100%;
+            height: auto;
         }
         table{
             border: 1px solid black;
@@ -140,10 +143,10 @@
                 <input type="text" placeholder="0" id="inpt" disabled>
             </td>
             <td>
-                <button onclick="back()" class="clear"><img src="clear.png" alt="Del"></button>
+                <button onclick="back()" class="clear" style="background-color: yellow;"><img src="clear.png" alt="Del"></button>
             </td>
             <td>
-                <button onclick="Clear()" class="clear">AC</button>
+                <button onclick="Clear()" class="clear" style="background-color: yellow;">AC</button>
             </td>
         </tr>
         <tr>
@@ -154,24 +157,24 @@
             <button onclick="disp('2')">2</button>
         </td>
         <td><button onclick="disp('3')">3</button></td>
-        <td><button onclick="disp('-')">-</button></td>
+        <td><button onclick="disp('-')" style="background-color: yellow;">-</button></td>
         </tr><tr>
             <td><button onclick="disp('4')">4</button></td>
             <td><button onclick="disp('5')">5</button></td>
             <td><button onclick="disp('6')">6</button></td>
-            <td><button onclick="disp('*')">X</button></td>
+            <td><button onclick="disp('*')" style="background-color: yellow;">X</button></td>
         </tr>
         <tr>
             <td><button onclick="disp('7')">7</button></td>
         <td><button onclick="disp('8')">8</button></td>
         <td><button onclick="disp('9')">9</button></td>
-        <td><button onclick="disp('/')">/</button></td>
+        <td><button onclick="disp('/')" style="background-color: yellow;">/</button></td>
         </tr>
         <tr>
             <td><button onclick="disp('.')">.</button></td>
         <td><button onclick="disp('0')">0</button></td>
-        <td><button onclick="disp('+')">+</button></td>
-        <td><button onclick="calc()" class="">=</button></td>
+        <td><button onclick="disp('+')" style="background-color: yellow;">+</button></td>
+        <td ><button onclick="calc()" class="" style="background-color: yellow;">=</button></td>
         </tr>
         
     </table>
